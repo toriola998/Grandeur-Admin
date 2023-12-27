@@ -1,25 +1,44 @@
 import SideNav from "../SideNav";
+import { useState } from "react";
 
 export default function PageLayout({ title, children }) {
+   const [showNav, setShowNav] = useState(false);
+
    return (
       <div className="lg:flex gap-x-10">
-         <div className="hidden lg:block">
+         <div
+            className={`lg:flex ${
+               showNav
+                  ? "absolute z-50 top-0 right-0 bottom-0 min-h-screen"
+                  : "hidden"
+            } 
+            `}
+         >
             <SideNav />
          </div>
 
          <div>
-            <div className="border-b border-green py-5 flex items-center justify-end">
-               <p
-                  className="border-2 border-green rounded-full h-10 w-10
-                text-green font-medium text-lg flex items-center justify-center mr-3"
+            <div className="border-b border-green py-5 flex items-center justify-between lg:justify-end px-5">
+               <button
+                  onClick={() => {
+                     setShowNav(!showNav);
+                  }}
+                  className="lg:hidden"
                >
-                  A
-               </p>
-               <p className="font-medium hidden sm:flex border-r border-green pr-5 mr-5">Welcome, Ameenah</p>
-               <button className="pr-5 flex items-center gap-x-1">
-                  Log out
-                  <span className="material-symbols-outlined text-[#dc2626]">logout</span>
+                  <span className="material-symbols-outlined">menu</span>
                </button>
+
+               <div className="flex items-center">
+                  <p className="initial">A</p>
+                  <p className="user-name">Welcome, Ameenah</p>
+
+                  <button className="flex items-center gap-x-1">
+                     Log out
+                     <span className="material-symbols-outlined text-[#dc2626]">
+                        logout
+                     </span>
+                  </button>
+               </div>
             </div>
 
             <main className="p-5 mt-5">

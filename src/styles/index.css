@@ -28,3 +28,12 @@
     --light-grey: #FAFAFA;
     --red: #FF3939;
 }
+
+.initial {
+   @apply border-2 border-green rounded-full h-10 w-10
+text-green font-medium text-lg flex items-center justify-center mr-3
+}
+
+.user-name {
+    @apply font-medium hidden sm:flex border-r border-green pr-5 mr-5;
+}
