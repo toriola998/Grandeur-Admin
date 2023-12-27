@@ -1,0 +1,23 @@
+.input-wrapper {
+    border: 1px solid var(--grey);
+    @apply rounded-lg bg-white flex items-center justify-between;
+
+    input {
+        outline: 0;
+        border: 0;
+        @apply rounded-lg;
+
+        &::placeholder {
+            @apply text-dark-grey opacity-50 text-sm;
+        }   
+    }
+
+    &:focus-within {
+        border: 1px solid var(--pry);
+        
+    }
+}
+
+.input-error {
+    border: 1px solid var(--red); 
+}

@@ -1,0 +1,41 @@
+thead {
+    border-radius: 100%;
+    border-bottom: 30px solid #fff;    
+    @apply h-20 bg-[#E0FBF1] rounded-lg;
+    
+    th { 
+        @apply font-semibold;
+        font-size: .9rem;
+    }
+}
+
+table {
+    margin: auto;
+    border-collapse: collapse;
+    border: none;
+    background-color: #fff;
+    border-spacing: 0;
+    overflow-x: scroll;
+    -ms-overflow-style: none; 
+    scrollbar-width: none;
+        
+    &::-webkit-scrollbar {
+        display:none; 
+    }
+}
+
+tr th
+    {
+    text-align: justify;
+}
+
+
+td:first-child,
+th:first-child {
+    border-radius: 10px 0 0 10px;
+}
+
+td:last-child,
+th:last-child {
+    border-radius: 0 10px 10px 0;
+}
