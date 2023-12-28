@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 export default function CustomerOrders() {
    return (
       <>
-         <div className="flex justify-end mb-10">
+         <div className="flex justify-end mb-5">
             <button className="green btn px-2 md:w-[170px]">
                <span className="material-symbols-outlined">add</span>Add
                <span className="hidden sm:flex pl-1">New Order</span>

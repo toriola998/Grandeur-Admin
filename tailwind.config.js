@@ -13,6 +13,7 @@ export default {
         'grey': '#D9D9D9',
         'grey-1': '#737373',
         'grey-2': '#EEEEEE',
+        'grey-3': '#d8d8d8',
         'white': '#FFFFFF',
         'light-grey': '#FAFAFA',
         'red': '#FF3939',

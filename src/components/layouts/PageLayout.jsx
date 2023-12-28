@@ -17,7 +17,7 @@ export default function PageLayout({ title, children }) {
             <SideNav />
          </div>
 
-         <div>
+         <div className="w-full lg:pr-10 overflow-hidden">
             <div className="border-b border-green py-5 flex items-center justify-between lg:justify-end px-5">
                <button
                   onClick={() => {

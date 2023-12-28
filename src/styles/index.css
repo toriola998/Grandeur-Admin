@@ -17,6 +17,7 @@
 
 :root {
     --yellow: #EEFF08;
+    --green: #315c4f;
     --pry: #668151;
     --dark-grey: #333333;
     --grey: #D9D9D9;
@@ -39,4 +40,13 @@ text-green font-medium text-lg flex items-center justify-center mr-3
 .customer-initial {
     @apply h-20 w-20 rounded-full flex justify-center items-center my-5
      text-white bg-[#5b917d] text-3xl;
+}
+
+.tab-trigger {
+    @apply select-none outline-none border-none cursor-pointer hover:to-grey-1 pb-2 mr-5 opacity-80;
+}
+
+.tab-trigger[data-state="active"] {
+    border-bottom: 2px solid var(--green);
+    opacity: initial;
 }
