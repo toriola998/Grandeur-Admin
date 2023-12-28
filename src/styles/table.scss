@@ -10,7 +10,7 @@ thead {
 }
 
 table {
-    margin: auto;
+    //margin: auto;
     border-collapse: collapse;
     border: none;
     background-color: #fff;
@@ -45,7 +45,7 @@ td {
 }
 
 .table-container {
-    @apply overflow-x-scroll max-w-full overflow-hidden;
+    @apply overflow-x-scroll max-w-full xl:overflow-hidden;
 }
 
 .table-container::-webkit-scrollbar {

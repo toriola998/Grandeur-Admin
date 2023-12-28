@@ -5,19 +5,19 @@ export default function PageLayout({ title, children }) {
    const [showNav, setShowNav] = useState(false);
 
    return (
-      <div className="lg:flex gap-x-10">
+      <div className="lg:flex justify-between gap-x-10">
          <div
             className={`lg:flex ${
                showNav
                   ? "absolute z-50 top-0 right-0 bottom-0 min-h-screen"
-                  : "hidden"
+                  : "hidden w-[400px]"
             } 
             `}
          >
             <SideNav />
          </div>
 
-         <div className="w-full lg:pr-10 overflow-hidden">
+         <div className="w-full lg:pr-10 overflow-hidden mb-20">
             <div className="border-b border-green py-5 flex items-center justify-between lg:justify-end px-5">
                <button
                   onClick={() => {

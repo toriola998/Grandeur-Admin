@@ -9,14 +9,16 @@ export default function CustomerOrders() {
             </button>
          </div>
          <div className="table-container">
-            <table className="w-[900px] lg:w-[1100px] customer-table">
+            <table className="customer-table w-[1100px]">
                <thead>
                   <tr>
                      <th className="pr-10 pl-4">ID</th>
                      <th>Entry Date</th>
                      <th>Collection Date</th>
-                     <th className="w-[130px]">Style</th>
-                     <th className="w-[130px]">Label</th>
+                     <th className="pr-10">Style</th>
+                     <th className="pr-10">Label</th>
+                     <th className="pr-10">Type</th>
+                     <th className="pr-6">Color</th>
                      <th>Status</th>
                      <th></th>
                   </tr>
@@ -28,6 +30,8 @@ export default function CustomerOrders() {
                      <td>3rd Nov 2025</td>
                      <td>Kaftan</td>
                      <td>Wedding</td>
+                     <td>Lace</td>
+                     <td>Red</td>
                      <td className="bg-[#ebfaf1] w-[140px] text-[#248f4f] pl-5 pr-5 ml-28">
                         <span className="flex items-center">
                            <span className="bg-[#248f4f] h-2 w-2 rounded-full flex mr-2" />
@@ -48,6 +52,8 @@ export default function CustomerOrders() {
                      <td>3rd Nov 2025</td>
                      <td className="mr-4">Kaftan</td>
                      <td>Wedding</td>
+                     <td>Guinea</td>
+                     <td>Red</td>
                      <td className="bg-[#e6ecff] text-[#002db3] w-[140px] pl-5 pr-5 ml-28">
                         <span className="flex items-center">
                            <span className="bg-[#002db3] h-2 w-2 rounded-full flex mr-2" />
@@ -68,6 +74,8 @@ export default function CustomerOrders() {
                      <td>3rd Nov 2025</td>
                      <td className="mr-4">Kaftan</td>
                      <td>Wedding</td>
+                     <td>Atiku</td>
+                     <td>Red</td>
                      <td className="bg-[#ffe6e6] text-[#DB353A] w-[140px] pl-5 pr-5 ml-28">
                         <span className="flex items-center">
                            <span className="bg-[#DB353A] h-2 w-2 rounded-full flex mr-2" />

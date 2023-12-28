@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function SideNav() {
    return (
-      <nav>
+      <nav className="lg:fixed min-h-screen">
          <ul className="bg-green text-white w-[300px] flex flex-col min-h-screen py-20 px-10 gap-y-6">
             <li className="">
                <img src="" alt="" />
