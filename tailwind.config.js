@@ -16,6 +16,7 @@ export default {
         'white': '#FFFFFF',
         'light-grey': '#FAFAFA',
         'red': '#FF3939',
+        'yellow': '#EEFF08'
       }
     },
   },

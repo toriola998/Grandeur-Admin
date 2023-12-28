@@ -1,8 +1,10 @@
+import CustomerOrders from "../components/CustomerOrders";
+//import Measurement from "../components/Measurement";
 import PageLayout from "../components/layouts/PageLayout";
 export default function Customer() {
    return (
       <PageLayout title="Ismail Demoski">
-         <div className="h-20 w-20 rounded-full flex justify-center items-center my-5 text-white bg-[#5b917d] text-3xl">
+         <div className="customer-initial">
             IS
          </div>
          <div className="mb-7">
@@ -29,6 +31,9 @@ export default function Customer() {
                style
             </p>
          </div>
+
+         {/* <Measurement /> */}
+         <CustomerOrders />
       </PageLayout>
    );
 }

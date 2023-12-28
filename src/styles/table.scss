@@ -1,5 +1,5 @@
 thead {
-    border-radius: 100%;
+    //border-radius: 100%;
     border-bottom: 30px solid #fff;    
     @apply h-20 bg-[#E0FBF1] rounded-lg;
     
@@ -39,3 +39,15 @@ td:last-child,
 th:last-child {
     border-radius: 0 10px 10px 0;
 }
+
+td {
+    font-size: 15px;
+}
+
+.table-container {
+    @apply overflow-x-scroll max-w-full overflow-hidden;
+}
+
+.table-container::-webkit-scrollbar {
+    display: none;
+  }

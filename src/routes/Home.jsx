@@ -19,7 +19,7 @@ export default function Home() {
             </button>
          </div>
 
-         <div className=" overflow-scroll">
+         <div className="table-container">
             <table className="w-[900px] lg:w-[1100px] customer-table">
                <thead>
                   <tr>
