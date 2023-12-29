@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 @import './button.scss';
 @import './input.scss';
 @import './table.scss';
@@ -49,4 +49,14 @@ text-green font-medium text-lg flex items-center justify-center mr-3
 .tab-trigger[data-state="active"] {
     border-bottom: 2px solid var(--green);
     opacity: initial;
+}
+
+.measurement-details {
+    span:nth-child(1) {
+        @apply text-sm mb-1 flex font-light;
+    }
+    
+    span:nth-child(2) {
+        @apply text-xl
+    }    
 }
