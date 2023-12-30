@@ -1,7 +1,15 @@
 .btn {
     @apply rounded py-2 text-sm flex justify-center items-center;
 
+    &.bright-green {
+        @apply bg-bright-green text-white;
+    }
+
     &.green {
         @apply bg-[#315c4f] text-white;
+    }
+
+    &.red {
+        @apply bg-red-2 text-white;
     }
 }

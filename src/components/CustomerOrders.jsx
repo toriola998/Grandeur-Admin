@@ -2,10 +2,12 @@ import { Link } from "react-router-dom";
 import OptionsDropdown from "./OptionsDropdown";
 import CustomerOrderDetails from "./modals/CustomerOrderDetails";
 import { useState } from "react";
+import ConfirmatoryModal from "./modals/ConfirmatoryModal";
 
 export default function CustomerOrders() {
    const [showOptions, setShowOption] = useState(false);
    const [showDetails, setShowDetails] = useState(false);
+   const [showDelete, setShowDelete] = useState(false);
 
    return (
       <>
@@ -63,7 +65,10 @@ export default function CustomerOrders() {
                                  setShowOption(false);
                               }}
                               edit={() => {}}
-                              deleteItem={() => {}}
+                              deleteItem={() => {
+                                 setShowDelete(true);
+                                 setShowOption(false);
+                              }}
                            />
                         )}
                      </td>
@@ -119,6 +124,16 @@ export default function CustomerOrders() {
             <CustomerOrderDetails
                closeModal={() => {
                   setShowDetails(false);
+               }}
+            />
+         )}
+         {showDelete && (
+            <ConfirmatoryModal
+               title="Delete Ismail Aremu Order?"
+               subtitle="Are you sure you want to delete Ismail Aremu's red kaftan from
+               his orders list ?"
+               closeModal={() => {
+                  setShowDelete(false);
                }}
             />
          )}
