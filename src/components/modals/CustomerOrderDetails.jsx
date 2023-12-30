@@ -8,7 +8,9 @@ export default function CustomerOrderDetails({ closeModal }) {
          closeModal={closeModal}
       >
          <div className="customer-order-details py-5 ">
-            <p className="text-lg md:text-2xl font-semibold pb-8">Ismail Aremu</p>
+            <p className="text-lg md:text-2xl font-semibold pb-8">
+               Ismail Aremu
+            </p>
             <div className="h-[430px] xl:h-[580px] overflow-y-scroll xl:overflow-y-hidden modal-scroll pr-4">
                <div className="flex items-center justify-between">
                   <div className="flex-center gap-x-3">
@@ -24,9 +26,9 @@ export default function CustomerOrderDetails({ closeModal }) {
                   <div>
                      <p className="bg-[#f4fdfa] rounded px-2 py-1">
                         <span className="font-semibold text-[13px] mr-4">
-                           Style:
+                           Fabric Source:
                         </span>
-                        <span className="text-sm">Kaftan</span>
+                        <span className="text-sm">In house</span>
                      </p>
                   </div>
                </div>
@@ -36,7 +38,7 @@ export default function CustomerOrderDetails({ closeModal }) {
                   <Details title="No of yards" value="4" />
                   <Details title="Fabric type" value="Lace" />
                   <Details title="Label" value="Wedding" />
-                  <Details title="Fabric Source" value="In house" />
+                  <Details title="Style" value="Kaftan" />
                   <Details title="Collection Option" value="Delivery" />
                   <Details title="Entry Date" value="21st, Nov 2020" />
                   <Details title="Delivery Date" value="3rd, Jan 2023" />

@@ -9,9 +9,11 @@ export default function InputField({
 }) {
    return (
       <div className="relative ">
-         <label htmlFor={name} className="text-sm mb-2 inline-flex">
-            {label}
-         </label>
+         {label && (
+            <label htmlFor={name} className="text-sm mb-2 inline-flex">
+               {label}
+            </label>
+         )}
 
          <div className="flex items-center w-full input-wrapper">
             <span className="material-symbols-outlined absolute left-4 text-dark-grey">

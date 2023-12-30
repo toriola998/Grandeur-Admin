@@ -10,7 +10,7 @@ export default function Home() {
             <InputField
                placeholder="Search by name"
                name="Search"
-               type="search"
+               type="text"
                icon="search"
             />
             <button className="green btn px-2 md:w-[170px]">

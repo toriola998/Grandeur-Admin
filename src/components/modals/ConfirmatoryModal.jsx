@@ -10,7 +10,7 @@ export default function ConfirmatoryModal({ closeModal, title, subtitle }) {
                alt=""
                className="block mx-auto"
             />
-            <p className="text-center py-6">{subtitle}</p>
+            <p className="text-center py-6 text-[15px]">{subtitle}</p>
 
             <div className="flex justify-center gap-x-4 ">
                <button
