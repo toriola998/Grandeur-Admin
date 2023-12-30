@@ -14,7 +14,7 @@ export default function ConfirmatoryModal({ closeModal, title, subtitle }) {
 
             <div className="flex justify-center gap-x-4 ">
                <button
-                  className="border-2 border-green btn px-5"
+                  className="bg-[#E0FBF1] btn px-5"
                   onClick={closeModal}
                >
                   <span class="material-symbols-outlined mr-1">close</span>
