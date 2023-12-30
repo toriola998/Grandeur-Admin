@@ -28,6 +28,7 @@ export default function Home() {
                      <th>Phone Number</th>
                      <th>Date Created</th>
                      <th>Last updated</th>
+                     <th>Pending Orders</th>
                      <th></th>
                   </tr>
                </thead>
@@ -40,6 +41,7 @@ export default function Home() {
                      </td>
                      <td>12th, Nov 2023</td>
                      <td>2nd, Jan 2025</td>
+                     <tr>3</tr>
                      <td>
                         <Link to="/">
                            <span className="material-symbols-outlined">
@@ -56,6 +58,7 @@ export default function Home() {
                      </td>
                      <td>1st, Jun 2023</td>
                      <td>15th, Mar 2025</td>
+                     <tr>0</tr>
                      <td>
                         <Link to="/">
                            <span className="material-symbols-outlined">
@@ -64,6 +67,7 @@ export default function Home() {
                         </Link>
                      </td>
                   </tr>
+                  
                   <tr className="h-14">
                      <td className="pl-4">2</td>
                      <td>Mr Tiamiyu Dirisu</td>
@@ -72,6 +76,7 @@ export default function Home() {
                      </td>
                      <td>3rd, Jun 2023</td>
                      <td>4th, Mar 2025</td>
+                     <tr>13</tr>
                      <td>
                         <Link to="/">
                            <span className="material-symbols-outlined">
