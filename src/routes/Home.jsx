@@ -1,4 +1,4 @@
-import InputField from "../components/InputField";
+import InputField from "../components/input-fields/InputField";
 import PageLayout from "../components/layouts/PageLayout";
 
 import { Link } from "react-router-dom";

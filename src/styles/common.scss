@@ -13,7 +13,7 @@
  
  .customer-initial {
      @apply h-20 w-20 rounded-full flex justify-center items-center my-5
-      text-white bg-[#5b917d] text-3xl;
+      text-white bg-green-2 text-3xl;
  }
  
  .tab-trigger {
@@ -63,3 +63,28 @@
     animation-name: modalActive;
     animation-duration: 0.2s;
 }
+
+/* Width */
+.modal-scroll::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  .modal-scroll::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+  
+  /* Handle */
+  .modal-scroll::-webkit-scrollbar-thumb {
+    @apply bg-green-2; 
+  }
+  
+  /* Handle on hover */
+  .modal-scroll::-webkit-scrollbar-thumb:hover {
+    background: transparent; 
+  }
+  
+  /* Overscroll track */
+  .modal-scroll::-webkit-scrollbar-corner {
+    background: #f1f1f1;
+  }

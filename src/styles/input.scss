@@ -1,23 +1,53 @@
+.input-wrapper, 
+.input-select {
+    border: 1px solid var(--grey-1);
+}
+
 .input-wrapper {
-    border: 1px solid var(--grey);
     @apply rounded-lg bg-white flex items-center justify-between;
+}
 
-    input {
-        outline: 0;
-        border: 0;
-        @apply rounded-lg;
+.input-select:hover {
+    border: 2px solid #5b917d;
+    cursor: pointer;
+}
 
-        &::placeholder {
-            @apply text-dark-grey opacity-50 text-sm;
-        }   
-    }
+.input-wrapper>input, 
+textarea,
+.input-select
+ {
+    @apply rounded-lg;
+
+    &::placeholder {
+        @apply text-dark-grey opacity-50 text-sm;
+    }   
 
     &:focus-within {
-        border: 1px solid var(--pry);
-        
+        outline-color: #5b917d;
     }
 }
 
 .input-error {
     border: 1px solid var(--red); 
+}
+
+.dropdown-list {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    @apply w-full rounded;
+    
+    li {
+        @apply px-4 py-4 cursor-pointer hover:bg-light-grey text-sm;
+    }
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }

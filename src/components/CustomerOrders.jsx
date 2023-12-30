@@ -3,16 +3,23 @@ import OptionsDropdown from "./OptionsDropdown";
 import CustomerOrderDetails from "./modals/CustomerOrderDetails";
 import { useState } from "react";
 import ConfirmatoryModal from "./modals/ConfirmatoryModal";
+import AddNewCustomerOrder from "./modals/forms/AddNewCustomerOrder";
 
 export default function CustomerOrders() {
    const [showOptions, setShowOption] = useState(false);
    const [showDetails, setShowDetails] = useState(false);
    const [showDelete, setShowDelete] = useState(false);
+   const [showAddNewOrder, setShowAddNewOrder] = useState(false);
 
    return (
       <>
          <div className="flex justify-end mb-5">
-            <button className="green btn px-2 md:w-[170px]">
+            <button
+               className="green btn px-2 md:w-[170px]"
+               onClick={() => {
+                  setShowAddNewOrder(true)
+               }}
+            >
                <span className="material-symbols-outlined">add</span>Add
                <span className="hidden sm:flex pl-1">New Order</span>
             </button>
@@ -134,6 +141,13 @@ export default function CustomerOrders() {
                his orders list ?"
                closeModal={() => {
                   setShowDelete(false);
+               }}
+            />
+         )}
+         {showAddNewOrder && (
+            <AddNewCustomerOrder
+               closeModal={() => {
+                  setShowAddNewOrder(false);
                }}
             />
          )}

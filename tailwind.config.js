@@ -9,6 +9,7 @@ export default {
       colors: {
         'pry': '#668151',
         'green': '#315c4f',
+        'green-2': '#5b917d',
         'bright-green': '#34A853',
         'light-green': '#f4fdfa',
         'light-green-2': '#E0FBF1',
