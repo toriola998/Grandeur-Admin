@@ -1,0 +1,65 @@
+.flex-center {
+    @apply flex items-center justify-center;
+}
+
+.initial {
+    @apply border-2 border-green rounded-full h-10 w-10
+ text-green font-medium text-lg flex items-center justify-center mr-3
+ }
+ 
+ .user-name {
+     @apply font-medium hidden sm:flex border-r border-green pr-5 mr-5;
+ }
+ 
+ .customer-initial {
+     @apply h-20 w-20 rounded-full flex justify-center items-center my-5
+      text-white bg-[#5b917d] text-3xl;
+ }
+ 
+ .tab-trigger {
+     @apply select-none outline-none border-none cursor-pointer hover:to-grey-1 pb-2 mr-5 opacity-80;
+ }
+ 
+ .tab-trigger[data-state="active"] {
+     border-bottom: 2px solid var(--green);
+     opacity: initial;
+ }
+ 
+ .measurement-details {
+     span:nth-child(1) {
+         @apply text-sm mb-1 flex font-light;
+     }
+     
+     span:nth-child(2) {
+         @apply text-xl;
+     }    
+ }
+ 
+ .dropdown {
+     @apply bg-white absolute rounded-lg w-48 right-8 z-30;
+     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+ 
+     button {
+         @apply flex items-center hover:bg-light-grey py-3 w-full justify-center gap-x-5;  
+     }
+ 
+     li:nth-child(1),
+     li:nth-child(2){
+         border-bottom: 0.1px solid var(--grey-3);
+     }
+ }
+ 
+ .overlay{
+     background: rgba(0, 0, 0, 0.6);
+     @apply right-0 bottom-0 top-0 z-50 fixed w-full h-full;
+ }
+
+ @keyframes modalActive {
+    from {transform: scale(0.7)}
+    to {transform: scale(1)}
+}
+  
+.modal-inner {
+    animation-name: modalActive;
+    animation-duration: 0.2s;
+}

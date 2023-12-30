@@ -1,5 +1,12 @@
 import { Link } from "react-router-dom";
+import OptionsDropdown from "./OptionsDropdown";
+import CustomerOrderDetails from "./modals/CustomerOrderDetails";
+import { useState } from "react";
+
 export default function CustomerOrders() {
+   const [showOptions, setShowOption] = useState(false);
+   const [showDetails, setShowDetails] = useState(false);
+
    return (
       <>
          <div className="flex justify-end mb-5">
@@ -8,7 +15,7 @@ export default function CustomerOrders() {
                <span className="hidden sm:flex pl-1">New Order</span>
             </button>
          </div>
-         <div className="table-container">
+         <div className="table-container pb-20">
             <table className="customer-table w-[1100px]">
                <thead>
                   <tr>
@@ -38,12 +45,27 @@ export default function CustomerOrders() {
                            Completed
                         </span>
                      </td>
-                     <td className="pl-10">
-                        <Link to="/">
+                     <td className="pl-10 relative">
+                        <button
+                           onClick={() => {
+                              setShowOption(!showOptions);
+                           }}
+                        >
                            <span className="material-symbols-outlined">
                               more_vert
                            </span>
-                        </Link>
+                        </button>
+
+                        {showOptions && (
+                           <OptionsDropdown
+                              view={() => {
+                                 setShowDetails(true);
+                                 setShowOption(false);
+                              }}
+                              edit={() => {}}
+                              deleteItem={() => {}}
+                           />
+                        )}
                      </td>
                   </tr>
                   <tr className="h-12 border-[#fff] border-b-[15px]">
@@ -93,6 +115,13 @@ export default function CustomerOrders() {
                </tbody>
             </table>
          </div>
+         {showDetails && (
+            <CustomerOrderDetails
+               closeModal={() => {
+                  setShowDetails(false);
+               }}
+            />
+         )}
       </>
    );
 }
