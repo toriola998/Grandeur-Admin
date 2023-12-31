@@ -4,12 +4,14 @@ import CustomerOrderDetails from "./modals/CustomerOrderDetails";
 import { useState } from "react";
 import ConfirmatoryModal from "./modals/ConfirmatoryModal";
 import AddNewCustomerOrder from "./modals/forms/AddNewCustomerOrder";
+import EditCustomerOrder from "./modals/forms/EditCustomerOrder";
 
 export default function CustomerOrders() {
    const [showOptions, setShowOption] = useState(false);
    const [showDetails, setShowDetails] = useState(false);
    const [showDelete, setShowDelete] = useState(false);
    const [showAddNewOrder, setShowAddNewOrder] = useState(false);
+   const [showEditOrder, setShowEditOrder] = useState(false);
 
    return (
       <>
@@ -17,7 +19,7 @@ export default function CustomerOrders() {
             <button
                className="green btn px-2 md:w-[170px]"
                onClick={() => {
-                  setShowAddNewOrder(true)
+                  setShowAddNewOrder(true);
                }}
             >
                <span className="material-symbols-outlined">add</span>Add
@@ -71,7 +73,10 @@ export default function CustomerOrders() {
                                  setShowDetails(true);
                                  setShowOption(false);
                               }}
-                              edit={() => {}}
+                              edit={() => {
+                                 setShowEditOrder(true);
+                                 setShowOption(false); 
+                              }}
                               deleteItem={() => {
                                  setShowDelete(true);
                                  setShowOption(false);
@@ -148,6 +153,13 @@ export default function CustomerOrders() {
             <AddNewCustomerOrder
                closeModal={() => {
                   setShowAddNewOrder(false);
+               }}
+            />
+         )}
+         {showEditOrder && (
+            <EditCustomerOrder
+               closeModal={() => {
+                  setShowEditOrder(false);
                }}
             />
          )}

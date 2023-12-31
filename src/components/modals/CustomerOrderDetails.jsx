@@ -4,7 +4,7 @@ import ModalLayout from "../layouts/ModalLayout";
 export default function CustomerOrderDetails({ closeModal }) {
    return (
       <ModalLayout
-         modalWidth="w-full sm:w-[550px] sm:w-[620px] h-[550px] xl:h-[630px]"
+         modalWidth="w-full sm:w-[550px] sm:w-[620px] h-[550px] xl:h-[670px]"
          closeModal={closeModal}
       >
          <div className="customer-order-details py-5 ">
