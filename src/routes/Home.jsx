@@ -20,7 +20,7 @@ export default function Home() {
          </div>
 
          <div className="table-container">
-            <table className="w-[900px] lg:w-[1100px] customer-table">
+            <table className="w-[900px] lg:w-[1000px] customer-table">
                <thead>
                   <tr>
                      <th className="pr-10 pl-4">S/N</th>
@@ -41,7 +41,7 @@ export default function Home() {
                      </td>
                      <td>12th, Nov 2023</td>
                      <td>2nd, Jan 2025</td>
-                     <tr>3</tr>
+                     <td>3</td>
                      <td>
                         <Link to="/">
                            <span className="material-symbols-outlined">
@@ -58,7 +58,7 @@ export default function Home() {
                      </td>
                      <td>1st, Jun 2023</td>
                      <td>15th, Mar 2025</td>
-                     <tr>0</tr>
+                     <td>0</td>
                      <td>
                         <Link to="/">
                            <span className="material-symbols-outlined">
@@ -76,7 +76,7 @@ export default function Home() {
                      </td>
                      <td>3rd, Jun 2023</td>
                      <td>4th, Mar 2025</td>
-                     <tr>13</tr>
+                     <td>13</td>
                      <td>
                         <Link to="/">
                            <span className="material-symbols-outlined">
